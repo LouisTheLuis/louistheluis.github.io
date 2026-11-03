@@ -2,6 +2,6 @@
 
 Plain HTML and CSS, served directly by GitHub Pages from the `gh-pages` branch. No build step.
 
-- `index.html`, `resume.html`, `projects.html`: the pages
+- `index.html`, `projects.html`: the pages
 - `css/style.css`: styles
 - `assets/`: images and PDFs
