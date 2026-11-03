@@ -1,4 +1,7 @@
 # My Personal Website!
 
-This website was designed using the React JavaScript library over the course of 2023's IAP. 
-The source code can be found up to date in the `master` branch of this repository.
+Plain HTML and CSS, served directly by GitHub Pages from the `gh-pages` branch. No build step.
+
+- `index.html`, `resume.html`, `projects.html`: the pages
+- `css/style.css`: styles
+- `assets/`: images and PDFs

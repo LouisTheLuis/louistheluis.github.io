@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Luis Martinez</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">About</a>
+    <a href="/resume.html">Resume</a>
+    <a href="/projects.html">Projects</a>
+  </nav>
+
+  <main>
+    <h1>Recent Works</h1>
+    <p>Here are some of the recent projects I have worked on!</p>
+
+    <section>
+      <h2>Audio Transmission via S/PDIF</h2>
+      <img src="/assets/spdif.jpg" alt="S/PDIF audio transmission project">
+      <p>
+        An interesting audio player! The project consisted in two Nexys 4 DDR FPGAs connected
+        by a TOSLINK fiber optic cable. The transmitter FPGA would contain an SD card —which would itself
+        have an implementation of the FAT12 file system in it— with .wav files, that would be selected
+        through a VGA screen. Then these audio files would be retransmitted through a TOSLINK fiber optic cable
+        using the S/PDIF audio transmission protocol to be received in a receiver FPGA, which would decode and reconstruct
+        the signal to be sent to an audio speaker. My main responsibility lied on the implementation of the audio transmission protocol
+        and the VGA screen.
+      </p>
+      <p>
+        <a href="https://github.com/alkeirn/optical_project">GitHub</a> ·
+        <a href="/assets/spidf_report.pdf">Final Report (PDF)</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Stargazer</h2>
+      <img src="/assets/stargazer.png" alt="Stargazer game screenshot">
+      <p>
+        An interactive game designed for the WebLab MIT competition, in collaboration with a classmate.
+        Through an implementation of the d3-celestial API developed from the D3.js visualization library, we designed
+        a game that allowed the user to learn and practice searching constellations in the sky. In order to make this possible,
+        we made use of the React.js framework.
+      </p>
+      <p>
+        The functionality of the website allows for a small encyclopedia that encompasses the original
+        48 Greek constellations, a casual game mode, a competitive mode, and a leaderboard.
+      </p>
+      <p><a href="https://github.com/LouisTheLuis/the-stargazer">GitHub</a></p>
+    </section>
+
+    <section>
+      <h2>Broadband Amplifier</h2>
+      <img src="/assets/broadband.jpg" alt="Broadband amplifier on a breadboard">
+      <p>
+        Final project for my Solid-State Circuits class. Basically a broadband amplifier that achieves a series of benchmarks: a midband
+        gain greater than 200, an upper 3dB bandwidth frequency <i>f<sub>h</sub></i> greater than 5MHz,
+        a lower 3dB bandwidth frequency <i>f<sub>l</sub></i> smaller than 100kHz, and a power dissipation of less than 100mW!
+      </p>
+      <p>
+        The design was made on LTSpice and tested on a breadboard, using a total of 3 2N3904 npn transistors for the design. The specs were
+        verified with an oscilloscope.
+      </p>
+      <p><a href="/assets/6209_report.pdf">Final Report (PDF)</a></p>
+    </section>
+  </main>
+</body>
+</html>
