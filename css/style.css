@@ -1,11 +1,18 @@
 /* Minimal base styles. Keep it simple; restyle later. */
 
+@import url("https://api.fontshare.com/v2/css?f[]=clash-grotesk@500&display=swap");
+
 body {
   max-width: 42rem;
   margin: 0 auto;
   padding: 1rem;
-  font-family: system-ui, sans-serif;
+  font-family: "Clash Grotesk", system-ui, sans-serif;
+  font-weight: 500;
   line-height: 1.5;
+}
+
+h1, h2, h3, strong, b {
+  font-weight: 500;
 }
 
 nav a {
